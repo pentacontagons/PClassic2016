@@ -1,35 +1,10 @@
 def anagram_tester(word_list):
-##    """
-##
-##    :param word_list: list of words
-##    :return: largest set of words that are all anagrams in alphabetical order
-##    """
-##
-##    if(len(word_list) == 0):
-##        return []
-##    if(len(word_list) == 1):
-##        return word_list
-##    
-##    letters = [[0]*26 for x in word_list]
-##
-##    for pos0,val0 in enumerate(word_list):
-##        for pos1,val1 in enumerate("abcdefghijklmnopqrstuvwxyz"):
-##            letters[pos0][pos1] = val0.count(val1)
-##
-##    counts = [letters.count(x) for x in letters]
-##
-##    maximum = letters[counts.index(max(counts))]
-##
-##    answer = []
-##
-##    for pos,val in enumerate(letters):
-##        if(val == maximum):
-##            answer.append(word_list[pos])
-##
-##    answer.sort()
-##    
-##    # TODO: implement
-##    return answer
+    """
+    
+    :param word_list: list of words
+    :return: largest set of words that are all anagrams in alphabetical order
+    
+    """
 
     sList = word_list[0:]
     for i in range(0,len(sList)):
