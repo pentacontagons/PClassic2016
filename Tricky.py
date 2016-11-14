@@ -9,8 +9,6 @@ def pythagorean_triples(c):
              respect to the other configurations.
     """
 
-    # TODO: implement
-
     listOf = []
     for b in range(1,c):
         l = (c**2-b**2)**.5
