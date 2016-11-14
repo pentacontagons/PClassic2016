@@ -38,7 +38,6 @@ def time_travel_tree_traversal(splits):
     :return: an integer indicating the largest distance between two timelines
     """
 
-    # TODO: implement
     maxIndex = 0
     for i in range(0,len(splits)):
         maxIndex = max(maxIndex,max(splits[i]))
