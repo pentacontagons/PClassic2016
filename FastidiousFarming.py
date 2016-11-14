@@ -30,40 +30,6 @@ def get_crop_amounts(A_water, A_labor, B_water, B_labor, total_water, total_labo
 
     return values
 
-##    b = (total_water*A_labor - total_labor*A_water)/(B_water*A_labor-B_labor*A_water)
-##    a = (total_water-b*B_water)/A_water
-##    if(a != int(a) or b != int(b)):
-##        return -1, -1
-##    
-##    return a, b
-##    
-##
-##
-##
-##
-##    a = -1
-##    b = -1
-##
-##    for m in range(0,int(total_water/max(A_water,1))+3):
-##        for n in range(0,int(total_water/max(B_water,1))+3):
-##            if(m*A_water+n*B_water == total_water and m*A_labor+n*B_labor == total_labor):
-##                a = m
-##                b = n
-##                return a, b
-
-##    for m in range(0,total_water+1):
-##        if(B_water == 0):
-##            n = 0
-##        else:
-##            n = (total_water-m*A_water)/B_water
-##        if(-.00001<(n - round(n))<.00001):
-##            n = round(n)
-##            if(m*A_water+n*B_water == total_water):             
-##                if(m*A_labor+n*B_labor == total_labor):
-##                    a = m
-##                    b = n
-    
-    
     
 if __name__ == "__main__":
     g = open("FastidiousFarmingOUT.txt","w")
